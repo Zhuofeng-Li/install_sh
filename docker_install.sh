@@ -9,8 +9,8 @@ echo \
   "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-# apt-cache madison docker-ce | awk '{ print $3 }'  # list version
-VERSION_STRING=5:20.10.21~3-0~ubuntu-jammy
-sudo apt-get install docker-ce=$VERSION_STRING docker-ce-cli=$VERSION_STRING containerd.io docker-buildx-plugin docker-compose-plugin
+apt-cache madison docker-ce | awk '{ print $3 }'  # list version
+# VERSION_STRING=5:20.10.21~3-0~ubuntu-jammy
+# sudo apt-get install docker-ce=$VERSION_STRING docker-ce-cli=$VERSION_STRING containerd.io docker-buildx-plugin docker-compose-plugin
 # docker -v
 # echo install successfully
