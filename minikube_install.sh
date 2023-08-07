@@ -5,3 +5,4 @@ minikube version
 sudo rm minikube
 minikube kubectl	# kubectl
 minikube start --kubernetes-version=v1.23.3  # kubernetes
+# minikube stop	# reset
