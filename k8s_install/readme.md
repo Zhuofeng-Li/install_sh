@@ -7,8 +7,9 @@
 
 ## Worker node(only worker node)
 1. `./k8s_worker_install.sh`
-1. `kubeadm token create --print-join-command` in Master node
-2. run 1 result 
+2. set each worknode `hostnamectl set-hostname k8s-worker1` - 3
+3. `kubeadm token create --print-join-command` in Master node
+4. run 1 result 
 
 # install Prometheus
 ## Master node(install Prometheus)
@@ -23,4 +24,4 @@
 1. `sudo .\social_network_install.sh`
 
 # set up
-1. `pip install -r requirement.txt`
+1. `pip install -r requirement.txt`		# recommend pip manually 
