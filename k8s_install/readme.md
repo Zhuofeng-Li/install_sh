@@ -11,17 +11,7 @@
 3. `kubeadm token create --print-join-command` in Master node
 4. run 1 result 
 
-# install Prometheus
-## Master node(install Prometheus)
-1. `sudo apt-get install prometheus`
-2. add other worker node to /etc/prometheus/prometheus.yaml job_name: node config 
-**dashboard control port: 9090 listen port: 9100**
 
-## Worker node(install Prometheus)
-1. ` sudo apt-get install prometheus-node-exporter`
-
-# install social_network(all nodes)
-1. `sudo .\social_network_install.sh`
 
 # set up
 1. `pip install -r requirement.txt`		# recommend pip manually 
